@@ -16,3 +16,6 @@ app,use(function(err, req, res, next){
     res.send('500 - internal server error');
 });
 
+app.listen(app.get('port'), function(){
+    console.log('Webpage started on http://localhost' + app.get('port') + ' ; Press Ctrl + C to terminate');
+});
