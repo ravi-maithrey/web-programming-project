@@ -1,0 +1,26 @@
+{
+  "name": "web-programming-project",
+  "version": "1.0.0",
+  "description": "project for iwp class",
+  "main": "gameazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravi-maithrey/web-programming-project.git"
+  },
+  "keywords": [
+    "iwp",
+    "cse3002"
+  ],
+  "author": "ravi maithrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravi-maithrey/web-programming-project/issues"
+  },
+  "homepage": "https://github.com/ravi-maithrey/web-programming-project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
