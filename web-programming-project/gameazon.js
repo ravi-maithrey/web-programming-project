@@ -1,6 +1,6 @@
 let express = require("express");
 let app = express();
-
+let fortunes = require('./lib/fortune.js');
 let handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 
 app.use(express.static(__dirname + '/public'));
@@ -34,12 +34,5 @@ app.listen(app.get('port'), function(){
     console.log('Webpage started on http://localhost:' + app.get('port') + ' ; Press Ctrl + C to terminate');
 });
 
-var fortunes = [
-    "Conquer your fears or they will conquer you.",
-    "Rivers need springs.",
-    "Do not fear what you don't know.",
-    "You will have a pleasant surprise.",
-    "Whenever possible, keep it simple.",
-    ];
 
     
