@@ -1,29 +1,30 @@
 let express = require("express");
 let app = express();
 
+let handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res){
-    res.type('text/plain');
-    res.send('Gameazon Shopping');
+    res.render('home')
 });
 
 app.get('/about', function(req, res){
-    res.type('text/plain');
-    res.send('About Gameazon');
+    res.render('about');
 });
 
 app.use(function(req, res){
-    res.type('text/plain');
     res.status(404);
-    res.send('404 - page not found');
+    res.render('404');
 });
 
 app.use(function(err, req, res, next){
     console.error(err.stack);
-    res.type('text/plain');
     res.status(500);
-    res.send('500 - internal server error');
+    res.render('500');
 });
 
 app.listen(app.get('port'), function(){
