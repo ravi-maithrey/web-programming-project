@@ -5,5 +5,5 @@ techonologies used are -
 (1. express 2. handlebars)
 
 
-#Notice
-If anyone wishes to use this, you can't. it is incomple and will remain so for the forseeable future
+<b>Notice</b><br>
+<i>If anyone wishes to use this, you can't. it is incomple and will remain so for the forseeable future</i>
